@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Asian weather</title>
+</head>
+<body> 
+ <div class="container__absolute">
+  <div id="displayScreen" class="container__screen">   
+   <h2 id="Temperature"></h2>
+   <h3 id="min"></h3>
+   <h3 id="max"></h3>
+  </div>
+  <div class="container__weather">
+   <form id="infoInput" class="weather__form" action="">
+    <h2>Weather info</h2>    
+    <select id="country" class="form__select" name="country" id="chooseCountry">     
+     <option value="china">China</option>
+     <option value="jp">Japon</option>
+     <option value="korea">Korea</option>
+    </select>    
+    <input id="city" class="form__" type="text" placeholder="City...">
+    <button id="submit" class="form__button">Get info</button>
+   </form>
+  </div>       
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

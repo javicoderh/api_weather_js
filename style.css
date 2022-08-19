@@ -1,0 +1,143 @@
+:root {
+ font-size: 16px;
+ margin:0px;
+ padding:0px;
+ 
+}
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+background-color: rgb(0, 0, 0);
+}
+
+.bg {
+ border-radius: 5%;
+ position:absolute;
+ width:90%;
+ height:95%;
+ z-index: 1;
+}
+
+.container__absolute {
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ position:absolute;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100vh;
+ background-color: rgba(255, 255, 255 0.1);
+ z-index: 2;
+ opacity:1;
+ /**outline: solid purple 1px;**/
+}
+
+.container__weather { 
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 60%;
+ height: 60%; 
+ background-color: transparent;
+ grid-column-start: 3;
+ grid-column-end: 3;
+ grid-row-start: 2;
+ grid-row-end: 2;
+ z-index: 2;
+}
+
+form { 
+ backdrop-filter: blur(45px);
+ position: absolute;
+ top: 1%;
+ left: 10%; 
+ background: linear-gradient(0deg, rgba(26, 255, 0, 0.4),rgba(21, 255, 0, 0.1));
+ height: 300px;
+ width: 300px;
+ border-radius: 15px;
+ box-shadow: 0px 2px 45px rgb(75, 77, 88);
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border: solid 1px rgb(148, 248, 82); 
+}
+
+form h2 {
+ color: silver;
+}
+
+form select  {
+ background-color: transparent;
+ height: 33px;
+ width: 130px;
+ border: none;
+ color: silver;
+ font-size: 1.5rem;
+ }
+
+ option {
+  background-color: transparent;
+ }
+
+form input { 
+ background-color: transparent;
+ width: 125px;
+ height: 28px;
+ margin-top: 10px;
+ border: none;
+ color: silver;
+ font-size: 1.2rem;
+}
+
+::placeholder { 
+ color: silver;
+ font-size: 1.2rem;
+}
+
+.container__screen {
+ position: relative;
+ left: 40px;
+ bottom: 0px;
+ border: rgb(109, 109, 109) solid 1px;
+ border-radius: 15%;
+ display:flex;
+ background: linear-gradient(0deg, rgba(75, 75, 75, 0.4),rgba(75, 75, 75, 0.1));
+ box-shadow: 0px 2px 45px rgb(63, 63, 63);
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 300px;
+ height: 300px;
+ grid-column-start: 1;
+ grid-column-end: 1;
+ grid-row-start: 2;
+ grid-row-end: 2;
+ color: white;
+ font-weight: 900; 
+ text-decoration: underline;
+}
+
+#submit {
+ color: silver;
+ background-color: rgb(189, 76, 76); 
+ margin-top: 10px;
+ font-size: 1.2rem;
+ border: solid 2px rgb(255, 1, 1);
+}
+
+#submit:hover {
+ text-decoration: underline;
+ transition: all 1s;
+}
+
+.alert-message {
+ color: silver;
+}
